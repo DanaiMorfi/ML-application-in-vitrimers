@@ -21,9 +21,9 @@ B2. Pre-processing: Contains two separate files: one for data (experimental set)
 
 B3. Dimensionality reduction:
 
-B4. Model training:
+B4. Model training: Contains four files like dimensionality reduction. Each contains two files: "alt" and "pca". The first contains the script "mod_train" that reads the "features_RF_MI_combined" excel, splits the data set using 5-fold cross validation, trains models using typical hyperparameters to predict each target variable, calculates validation metrics and saves results in "model_performance_summary". The second contains the same but instead of the "features_RF_MI_combined" excel, it uses the "pca_transformed_features" to train models.
 
-B5. Hyperparameter tuning:
+B5. Hyperparameter tuning: Contains three files: "pca_d", "dim_Tg" and "dim_Tv". The first contains the script "mod_train_CV_d" that reads the "pca_transformed_features" excel, applies 5-fold cross-validation and grid search, trains models using the optimal hyperparameters, calculates validation metrics and saves results in "model_performance_summary_CV". The same applies for the other two but instead of "pca_transformed_features" they use "features_RF_MI_combined", changing the name of the main script accordingly.
 
-B6. Plotting: 
+B6. Plotting: Same as model training with extra features. The main script creates parity plots and error distribution plots, using results from model training and true values from "Draft4_cleaned2" after reversing the normalization that was applied earlier. The files also contain the script "bar_charts" that create a box plot that compares metrics for all models predicting the same target variable. This is applied for all target variables for both dimensionality reduction methods, as well as the tuned models, using results from B5.
 
