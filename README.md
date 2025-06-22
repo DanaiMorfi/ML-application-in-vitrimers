@@ -22,14 +22,17 @@ The second contains two scripts:
 1.	"feat_normilization_clean" which reads "SMILES_list_with_descriptors", applies processing as described in the paper (zero and low standard deviation filter and scarcity filter) and saves cleaned results in "SMILES_list_cleaned2". It also creates a file for histograms of all non-normalized features. 
 2.	"skewness check" which reads "SMILES_list_cleaned2", applies normalization as described in the paper (applies linear normalization for non- skewed features and log normalization for skewed features) and saves results in "normalized_SMILES_list2". It also creates a file for histograms of all normalized features.
 
-B3. Dimensionality reduction: Contains four files: one for each target variable so density, Tg, Tv, gel. Each contains two files: "alt" and "pca". 
+B3. Dimensionality reduction: Contains four files: one for each target variable so density, Tg, Tv, gel. 
+Each contains two files: "alt" and "pca". 
+
 The first contains several scripts like: 
 1.	"cor_anal_data" which takes "normalized_Draft42", performs correlation analysis on it and saves the results in "normalized_Draft4_cleaned_final2"
 2.	"cor_anal_feat" that does the same for "normalized_SMILES_list2" and creates "normalized_SMILES_list_cleaned_final2"
 3.	"merge" that combines "normalized_Draft4_cleaned_final2" and "normalized_SMILES_list_cleaned_final2" into one united dataset named "augmented_output_clean2"
 4.	"last_cor" that performs correlation analysis on "augmented_output_clean2" and saves results in "augmented_output_clean1_final2"
 5.	"X_DR" where X= MI or RF that read "augmented_output_clean1_final2", train an MI or RF algorithm to perform feature selection and save results in "features_X"
-6.	"features_features_RF-MI" that read "augmented_output_clean1_final2", train both algorithms and save combined total results in "features_RF_MI_combined". 
+6.	"features_features_RF-MI" that read "augmented_output_clean1_final2", train both algorithms and save combined total results in "features_RF_MI_combined".
+
 The second file contains two scripts: 
 1.	"merge" that does the same as before but saves results in "augmented_output_clean"
 2.	"pca" which takes "augmented_output_clean", trains a PCA algorithm, creates 4 principal components and saves results in "pca_transformed_features". It also creates a PCA heatmap.
