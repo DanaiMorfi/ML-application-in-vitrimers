@@ -1,7 +1,6 @@
 # ML-application-in-vitrimers
 Development and application of machine learning models for the prediction of critical properties of dynamically crosslinked polymers.
 
-
 This GitHub contains all the code and excel files created and used during this work. 
 Here, you can find all necessary information to better understand the workflow used, reproduce results or even build on the existing work and database and expand them to further research into this fascinating subject.
 
