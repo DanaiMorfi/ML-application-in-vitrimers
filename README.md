@@ -26,15 +26,15 @@ B3. Dimensionality reduction: Contains four files: one for each target variable 
 Each contains two files: "alt" and "pca". 
 
 The first contains several scripts like: 
-1.	"cor_anal_data" which takes "normalized_Draft42", performs correlation analysis on it and saves the results in "normalized_Draft4_cleaned_final2"
-2.	"cor_anal_feat" that does the same for "normalized_SMILES_list2" and creates "normalized_SMILES_list_cleaned_final2"
-3.	"merge" that combines "normalized_Draft4_cleaned_final2" and "normalized_SMILES_list_cleaned_final2" into one united dataset named "augmented_output_clean2"
-4.	"last_cor" that performs correlation analysis on "augmented_output_clean2" and saves results in "augmented_output_clean1_final2"
-5.	"X_DR" where X= MI or RF that read "augmented_output_clean1_final2", train an MI or RF algorithm to perform feature selection and save results in "features_X"
+1.	"cor_anal_data" which takes "normalized_Draft42", performs correlation analysis on it and saves the results in "normalized_Draft4_cleaned_final2".
+2.	"cor_anal_feat" that does the same for "normalized_SMILES_list2" and creates "normalized_SMILES_list_cleaned_final2".
+3.	"merge" that combines "normalized_Draft4_cleaned_final2" and "normalized_SMILES_list_cleaned_final2" into one united dataset named "augmented_output_clean2".
+4.	"last_cor" that performs correlation analysis on "augmented_output_clean2" and saves results in "augmented_output_clean1_final2".
+5.	"X_DR" where X= MI or RF that read "augmented_output_clean1_final2", train an MI or RF algorithm to perform feature selection and save results in "features_X".
 6.	"features_features_RF-MI" that read "augmented_output_clean1_final2", train both algorithms and save combined total results in "features_RF_MI_combined".
 
 The second file contains two scripts: 
-1.	"merge" that does the same as before but saves results in "augmented_output_clean"
+1.	"merge" that does the same as before but saves results in "augmented_output_clean".
 2.	"pca" which takes "augmented_output_clean", trains a PCA algorithm, creates 4 principal components and saves results in "pca_transformed_features". It also creates a PCA heatmap.
 
 B4. Model training: Contains four files like dimensionality reduction. Each contains two files: "alt" and "pca". 
