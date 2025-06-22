@@ -11,7 +11,7 @@ Because each code snippet is stored in its respective file, some documents (spec
 
 The basic functions behind every file are as follows:
 
-A. Excel files: Contains all excel files used and created during this work. This involves input excels like SMILES list excel ("SMILES_list") and curated database excel ("Draft4_new2"), cleaned curated database excel used during plotting ("Draft4_cleaned2") and output excels like SMILES list with pictures for visualization of molecules used during vitrimer synthesis ("SMILES"), model training results comparing between PCA and the alternative method ("dim_red_X", with X= d, Tg, Tv, gel) and results comparing between tuned and untuned models ("hp_tuning_X, with X= d, Tg, Tv, gel).
+A. Excel files: Contains all excel files used and created during this work. This involves input excels like SMILES list excel ("SMILES_list") and curated database excel ("Draft4_new2"), cleaned curated database excel used during plotting ("Draft4_cleaned2") and output excels like SMILES list with pictures for visualization of molecules used during vitrimer synthesis ("SMILES_list_with_pictures"), model training results comparing between PCA and the alternative method ("dim_red_X", with X= d, Tg, Tv, gel) and results comparing between tuned and untuned models ("hp_tuning_X, with X= d, Tg, Tv, gel).
 
 B. Coding files: Contains every piece of code used during this work, divided into steps.
 
