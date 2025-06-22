@@ -38,7 +38,9 @@ The second file contains two scripts:
 2.	"pca" which takes "augmented_output_clean", trains a PCA algorithm, creates 4 principal components and saves results in "pca_transformed_features". It also creates a PCA heatmap.
 
 B4. Model training: Contains four files like dimensionality reduction. Each contains two files: "alt" and "pca". 
+
 The first contains the script "mod_train" that reads the "features_RF_MI_combined" excel, splits the data set using 5-fold cross validation, trains models using typical hyperparameters to predict each target variable, calculates validation metrics and saves results in "model_performance_summary".
+
 The second contains the same but instead of the "features_RF_MI_combined" excel, it uses the "pca_transformed_features" to train models.
 
 B5. Hyperparameter tuning: Contains three files: "pca_d", "dim_Tg" and "dim_Tv".
